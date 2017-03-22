@@ -1,0 +1,87 @@
+body{
+  background-image: url(https://image.freepik.com/vecteurs-libre/paysage-de-foret-sombre-dans-la-savane_660230.jpg);
+  background-size: 100%;
+  animation-name: backMove;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes backMove {
+  0%{
+    background-position: 0;
+  }
+  100%{
+    background-position: -100vw;
+  }
+}
+
+#chat div {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 500px
+}
+
+.run{
+  background-image: url('../img/chat1.png');
+  height: 250px;
+  width: 500px;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  animation-name: run;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  border-bottom: 2px solid white;
+}
+
+.jump{
+  background-image: url('../img/chat8.png');
+  height: 250px;
+  width: 500px;
+  background-size: 250px;
+  animation-name: jump;
+  background-repeat: no-repeat;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  /*border-bottom: 2px solid white;
+  margin-bottom: 300px;*/
+
+  position: relative;
+  bottom: 0;
+}
+
+@keyframes run{
+  0%{
+    background-image: url('../img/chat1.png');
+  }
+  35%{
+    background-image: url('../img/chat2.png');
+  }
+  65%{
+    background-image: url('../img/chat3.png');
+  }
+  100%{
+    background-image: url('../img/chat4.png');
+  }
+}
+
+
+@keyframes jump{
+  0%{
+    background-image: url('../img/chat5.png');
+    bottom: 0;
+  }
+  35%{
+    background-image: url('../img/chat4.png');
+    bottom: 200px;
+  }
+  65%{
+    background-image: url('../img/chat8.png');
+    bottom: 200px;
+  }
+  100%{
+    background-image: url('../img/chat1.png');
+    bottom: 0;
+  }
+}
